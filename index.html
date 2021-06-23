@@ -7,8 +7,14 @@
     <title>OriginSix</title>
     <link rel="stylesheet" href="css/style.css" />
 
+    <!--Swiper JavaScript via cdn-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!--Icones-->
-    <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet" href="assets/fonts/style.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,11 +24,14 @@
     />
   </head>
   <body>
-    <header id="header"> <!--Inicio Header-->
-      <nav class="container"> <!--Inicio nav-->
+    <header id="header">
+      <!--Inicio Header-->
+      <nav class="container">
+        <!--Inicio nav-->
         <a class="logo" href="#">Beauty<span>Salon</span>.</a>
-        <div class="menu"> <!--Inicio menu-->
-          <ul class="grid"> 
+        <div class="menu">
+          <!--Inicio menu-->
+          <ul class="grid">
             <li>
               <a class="title" href="#home">Inicio</a>
             </li>
@@ -38,14 +47,19 @@
             <li>
               <a class="title" href="#contact">Contato</a>
             </li>
-          </ul> 
-        </div> <!--Fim menu-->
+          </ul>
+        </div>
+        <!--Fim menu-->
         <div class="toggle icon-menu"></div>
         <div class="toggle icon-close"></div>
-      </nav> <!--Fim nav-->
-    </header> <!--Fim header-->
-    <main> <!--Inicio main-->
-      <section class="section" id="home"> <!--Inicio section home-->
+      </nav>
+      <!--Fim nav-->
+    </header>
+    <!--Fim header-->
+    <main>
+      <!--Inicio main-->
+      <section class="section" id="home">
+        <!--Inicio section home-->
         <div class="container grid">
           <div class="image">
             <img
@@ -53,64 +67,188 @@
               alt="Imagem de cabelereira da BeautySalon, escovando cabelo de uma mulher."
             />
           </div>
-          <div class="text"> <!--inicio text-->
+          <div class="text">
+            <!--inicio text-->
             <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>
               Um salão exclusivo em São Paulo, especializado em tratamento
               naturais.
             </p>
             <a class="button" href="#">Agendar um horário</a>
-          </div> <!--fim text-->
+          </div>
+          <!--fim text-->
         </div>
-      </section> <!--fim section home-->
+      </section>
+      <!--fim section home-->
 
       <div class="divider-1"></div>
-      
-    </main> <!--Fim main-->
-    <section class="section" id="about"> <!--Inicio section about-->
-      <div class="container grid">
-        <div class="image">
-          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="Três mulheres cabelereiras sorrindo, com instrumentos para cortar cabelo.">
+      <section class="section" id="about">
+        <!--Inicio section about-->
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+              alt="Três mulheres cabelereiras sorrindo, com instrumentos para cortar cabelo."
+            />
+          </div>
+          <div class="text">
+            <!--Inicio text about-->
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              nam itaque recusandae quisquam quas temporibus accusamus veniam,
+              fuga minima pariatur quo, aperiam praesentium. Sint omnis
+              molestiae modi rem iste quia.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              officiis voluptates officia dolore ea, sequi blanditiis ad eaque
+              laboriosam minus perspiciatis autem animi, voluptatem
+              exercitationem praesentium nam sit molestiae veniam.
+            </p>
+            br Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laboriosam modi laudantium illum, minus, cum error debitis voluptate
+            exercitationem quia necessitatibus temporibus rerum mollitia?
+            Doloribus, culpa eum perspiciatis saepe quam facere!
+          </div>
         </div>
-        <div class="text"> <!--Inicio text about-->
-          <h2 class="title">Sobre nós</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero nam itaque recusandae quisquam quas temporibus accusamus veniam, fuga minima pariatur quo, aperiam praesentium. Sint omnis molestiae modi rem iste quia.</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta officiis voluptates officia dolore ea, sequi blanditiis ad eaque laboriosam minus perspiciatis autem animi, voluptatem exercitationem praesentium nam sit molestiae veniam.</p>
-          br
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam modi laudantium illum, minus, cum error debitis voluptate exercitationem quia necessitatibus temporibus rerum mollitia? Doloribus, culpa eum perspiciatis saepe quam facere!
-        </div>
-      </div> <!--Fim text about-->
-    
-      <div class="divider-2"></div>
+        <!--Fim text about-->
 
-    </section> <!--Fim section about-->
-    <section class="section" id="services"> <!--Inicio section services-->
-      <div class="container grid">
-        <header>
-          <h2 class="title">Serviços</h2>
-          <p>Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais.</p>
-        </header>
-        <div class="cards grid">
-         <div class="card">
-          <i class="icon-woman-hair"></i>
-          <h3 class="title">Terapia capilar</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad ducimus exercitationem voluptates corrupti dicta ratione culpa?</p>
-         </div>
-         <div class="card">
-          <i class="icon-trim"></i>
-          <h3 class="title">Cortes</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, facere ab? Minima nihil blanditiis ullam voluptatibus temporibus!</p>
-         </div>
-         <div class="card">
-          <i class="icon-cosmetic"></i>
-          <h3 class="title">Tratamentos</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corrupti iste neque veniam, provident ipsam dolore explicabo!</p>
-         </div>
+        <div class="divider-2"></div>
+      </section>
+      <!--Fim section about-->
+      <section class="section" id="services">
+        <!--Inicio section services-->
+        <div class="container grid">
+          <header>
+            <!--Inicio header-->
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais.
+            </p>
+          </header>
+          <!--Fim Header-->
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ad ducimus exercitationem voluptates corrupti dicta ratione
+                culpa?
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                facere ab? Minima nihil blanditiis ullam voluptatibus
+                temporibus!
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt corrupti iste neque veniam, provident ipsam dolore
+                explicabo!
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section> <!--Fim section services-->
+      </section>
+      <!--Fim section services-->
 
+      <div class="divider-1"></div>
+
+      <!--Inicio section testimonials-->
+      <section class="section" id="testimonials">
+        <!--Inicio container-->
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <!--Inicio testimonials-->
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <!--Inicio testimonial 1-->
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/Image/WhatsApp Image 2021-06-23 at 2.17.35 PM.jpg"
+                      alt="Foto de Matheus braynner"
+                    />
+                    Matheus Braynner
+                  </cite>
+                </blockquote>
+                <!--Fim testimonial 1-->
+              </div>
+              <!--Inicio testimonial 2-->
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/Image/WhatsApp Image 2021-06-23 at 2.17.35 PM.jpg"
+                      alt="Foto de Matheus braynner"
+                    />
+                    Matheus Braynner
+                  </cite>
+                </blockquote>
+                <!--Fim testimonial 2-->
+              </div>
+              <!--Inicio testimonial 3-->
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/Image/WhatsApp Image 2021-06-23 at 2.17.35 PM.jpg"
+                      alt="Foto de Matheus braynner"
+                    />
+                    Matheus Braynner
+                  </cite>
+                </blockquote>
+                <!--Fim testimonial 3-->
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!--Fim testimonials-->
+          </div>
+          <!--Fim container-->
+        </div>
+        <!--Fim testimonials-->
+      </section>
+      <!--Inicio Contact-->
+      <section></section>
+      <!--Fim contact-->
+    </main>
+    <!--Fim main-->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
