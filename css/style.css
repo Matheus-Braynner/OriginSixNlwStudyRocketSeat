@@ -29,6 +29,8 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  /* Fonts */
+  --title-font-size: 1.875rem;
 }
 
 /****************** Base ******************/
@@ -152,6 +154,10 @@ main {
   color: var(--base-color);
 }
 
+.logo-alt span {
+  color: var(--body-color);
+}
+
 /****************** Navigation ******************/
 
 nav {
@@ -258,6 +264,7 @@ nav.show div.icon-close {
 }
 
 #home .image::before {
+  content: '';
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -305,6 +312,7 @@ nav.show div.icon-close {
 }
 
 #about .image::before {
+  content: '';
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -449,4 +457,85 @@ nav.show div.icon-close {
 
 #contact ul li i {
   color: var(--base-color);
+}
+
+/****************** Footer ******************/
+
+footer {
+  background: var(--base-color);
+}
+
+footer .brand .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand {
+  color: var(--text-color-light);
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-9px);
+}
+
+/* Back to top */
+
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem;
+  clip-path: circle();
+  line-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateX(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+ Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+ Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+ Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+ Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}
+*/
+
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.2rem;
+  }
 }
